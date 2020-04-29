@@ -15,7 +15,7 @@ import {
 } from "react-icons/fa";
 // import { Link } from "react-router-dom";
 import { Link } from "react-scroll";
-import logo from "../images/l7.svg";
+import logo from "../images/peterihimire-logo.svg";
 import { useContext } from "react";
 import { ProjectContext } from "../context";
 

@@ -47,15 +47,6 @@ const Home = () => {
       <Contact />
       <Footer />
       <ScrollToTop />
-      {/* <Hero hero="defaultHero">
-        <Banner name="peter ihimire" title="web developer" />
-      </Hero>
-      <Services />
-      <About />
-      <Portfolio />
-      <Skill />
-      <Contact />
-      <Footer /> */}
     </>
   );
 };

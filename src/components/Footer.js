@@ -10,7 +10,7 @@ import {
   FaMapMarkedAlt
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo2 from "../images/l1.svg";
+import logo2 from "../images/peterihimire-logo-alt.svg";
 
 function footer() {
   return (

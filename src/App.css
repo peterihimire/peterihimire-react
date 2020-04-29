@@ -1,7 +1,6 @@
 :root {
   font-size: 62.5%;
   --primaryColor: #008ed6;
-  /* --primaryColor: #004bd6; */
   --secondaryColor: #868e96;
   --mainWhite: #fff;
   --mainBlack: #444;
@@ -108,12 +107,6 @@ body {
 .nav-header img {
   width: 5rem;
   /* height: 5rem; */
-}
-
-.logo .logo-span {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 .nav-btn {
@@ -318,7 +311,6 @@ body {
   padding: 2rem 1rem;
   text-align: center;
   text-transform: uppercase;
-  /* letter-spacing: var(--mainSpacing); */
 }
 
 .banner h1 {
@@ -516,7 +508,6 @@ body {
   margin-bottom: 5rem;
 }
 .color-primary {
-  /* color: var(--mainBlack); */
   color: var(--mainBlack);
   padding-left: 2rem;
 }
@@ -1305,7 +1296,7 @@ textarea {
     bottom: 10rem;
     visibility: hidden;
     transition: all linear 0.5s;
-    padding: 1.2rem 2rem 0.8rem 2rem;
+    padding: 1.2rem 2rem 1rem 2rem;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 50px 0 0 50px;
     transform: translateX(100%);
