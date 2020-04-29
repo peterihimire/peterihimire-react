@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import items from "./data";
+// import items from "./data";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -14,9 +14,6 @@ import {
 } from "react-icons/fa";
 import { FaRocket, FaHeartbeat, FaGem, FaDesktop } from "react-icons/fa";
 import Client from "./Contentful";
-Client.getEntries()
-  .then(response => console.log(response.items))
-  .catch(err => console.log(err));
 
 const ProjectContext = React.createContext();
 
@@ -28,28 +25,28 @@ class ProjectProvider extends Component {
         iconColor: "gem-color",
         title: "intuitive UX/UI",
         info:
-          "I have strong preference for easy to use Intuitive User Experience and User Interfaces."
+          "I have strong preference for Intuitive User Experience and User Interfaces."
       },
       {
         icon: <FaRocket />,
         iconColor: "rocket-color",
         title: "fast load time",
         info:
-          "Fast load times and lag free interaction are my highest priority."
+          "Fast load times and lag free interactions are my highest priority."
       },
       {
         icon: <FaDesktop />,
         iconColor: "desktop-color",
         title: "responsive layout",
         info:
-          "My layout will work on any device, be it desktops, laptops, tablets and mobile phones."
+          "My layout will work on any device, laptops, tablets and smart-phones."
       },
       {
         icon: <FaHeartbeat />,
         iconColor: "heart-color",
         title: "dynamic website",
         info:
-          "Website dont have to be static, I like to make web pages come to life."
+          "Website don't have to be static, I like to make web pages come to life."
       }
     ],
     stacks: [
@@ -66,7 +63,7 @@ class ProjectProvider extends Component {
       {
         title: "mentor",
         details:
-          " Starting the journey of a web development and software engineering has never been easy, I know what it feels like, thats why I genuinely care about new programmers and fellow web developers, mentoring and helping them improve on their soft and hard skills as a software engineer."
+          " Starting the journey of a web development and software engineering has never been easy, I know what it feels like, thats why I genuinely care about new programmers and fellow web developers, mentoring and helping them improve on their soft and hard skills as a software engineers."
       }
     ],
     skills: [
@@ -138,18 +135,29 @@ class ProjectProvider extends Component {
     loading: true,
     type: "all"
   };
+  // getData
+  getData = async () => {
+    try {
+      let response = await Client.getEntries({
+        content_type: "portfolioProjects",
+        order: "sys.createdAt"
+      });
+      let projects = this.formatData(response.items);
+      this.setState({
+        projects,
+        sortedProjects: projects,
+        loading: false
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   componentDidMount() {
     document.addEventListener("scroll", e => {
       this.toggleVisibility();
     });
-
-    let projects = this.formatData(items);
-    this.setState({
-      projects,
-      sortedProjects: projects,
-      loading: false
-    });
+    this.getData();
   }
 
   toggleHandler = () => {
@@ -189,7 +197,10 @@ class ProjectProvider extends Component {
 
   formatData(items) {
     let tempItems = items.map(item => {
-      let project = { ...item };
+      let id = item.sys.id;
+      let image = item.fields.image.fields.file.url;
+      let project = { ...item.fields, id, image };
+      // let project = { ...item };
       return project;
     });
     return tempItems;
@@ -238,7 +249,7 @@ class ProjectProvider extends Component {
 
 const ProjectConsumer = ProjectContext.Consumer;
 
-export function withProjectConsumer(Component) {
+export const withProjectConsumer = Component => {
   return function ConsumerWrapper(props) {
     return (
       <ProjectConsumer>
@@ -246,5 +257,5 @@ export function withProjectConsumer(Component) {
       </ProjectConsumer>
     );
   };
-}
+};
 export { ProjectProvider, ProjectConsumer, ProjectContext };

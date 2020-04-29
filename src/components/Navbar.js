@@ -19,11 +19,9 @@ import logo from "../images/l7.svg";
 import { useContext } from "react";
 import { ProjectContext } from "../context";
 
-const Navbar = props => {
+const Navbar = () => {
   const context = useContext(ProjectContext);
-  console.log(context);
   const { removeOverlay, toggleHandler, isOpen } = context;
-  console.log(removeOverlay, toggleHandler, isOpen);
   return (
     <>
       <div

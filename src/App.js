@@ -4,13 +4,6 @@ import ScrollToTop from "./components/ScrollToTop";
 import { FaArrowDown } from "react-icons/fa";
 import Navbar from "./components/Navbar";
 import { Link } from "react-scroll";
-
-// import img1 from "./images/benkih-ecommerce.png";
-// import img2 from "./images/benkih-todo.png";
-// import img3 from "./images/benkih-budget.png";
-// import img4 from "./images/benkih-quiz.png";
-// import img5 from "./images/peterihimirefewd.png";
-
 import Hero from "./components/Hero";
 import Banner from "./components/Banner";
 import Services from "./components/Services";
@@ -32,7 +25,7 @@ class App extends Component {
           overlay={this.removeOverlay}
         />
         <Hero hero="defaultHero">
-          <Banner name="peter ihimire" title="frontend web developer">
+          <Banner name="peter ihimire" title="front-end web developer">
             <Link
               activeClass="active"
               to="project-section"
@@ -63,7 +56,7 @@ class App extends Component {
         <Skill />
         <Contact />
         <Footer />
-        <ScrollToTop scroll={this.scrollUp} showTop={this.state.isVisible} />
+        <ScrollToTop />
       </Fragment>
     );
   }

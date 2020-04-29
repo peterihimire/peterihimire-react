@@ -8,7 +8,6 @@ class ScrollToTop extends Component {
   render() {
     console.log(ProjectContext);
     const { scrollUp, isVisible } = this.context;
-    console.log(scrollUp, isVisible);
     return (
       <>
         <Link

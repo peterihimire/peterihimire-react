@@ -6,7 +6,6 @@ import { ProjectContext } from "../context";
 
 const Skill = () => {
   const context = useContext(ProjectContext);
-  console.log(context);
   const { skills } = context;
   return (
     <section id="skill-section" className="skills">

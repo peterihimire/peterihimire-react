@@ -8,7 +8,6 @@ import { ProjectContext } from "../context";
 
 const About = () => {
   const context = useContext(ProjectContext);
-  console.log(context);
   const { stacks } = context;
   return (
     <section id="about-section" className="about">
@@ -24,14 +23,14 @@ const About = () => {
           </div>
           <div className="biography-text">
             <p>
-              Based in Nigeria, am a seasoned Front-End web developer,
+              Based in Nigeria, I am a seasoned front-end web developer,
               passionate about building excellent software that make a
-              difference. I have a Bachelor of Engineering (B.Eng.) in
-              Electrical Electronics, but have real passion for programming and
-              web development, where I specialize in creating unique,
-              market-centric, informative websites that put my clients above
-              their competitors, ranging from individuals and small businesses
-              all the way to large enterprice corporations.
+              difference. I have a Bachelor of Engineering in Electrical
+              Electronics, but have real passion for programming and web
+              development, where I specialize in creating unique, market-centric
+              websites that put my clients above their competitors, ranging from
+              individuals and small businesses all the way to large enterprice
+              corporations.
             </p>
 
             <p>
@@ -44,13 +43,13 @@ const About = () => {
             </p>
 
             <p>
-              When am not programming, tweeting, you'll find me in my home
-              studio cooking up some youtube tech videos, where I share my
-              thoughts about mobile technologies, often I work out in the gym
-              too . Click to download my{" "}
+              When am not programming, you'll find me in my home studio cooking
+              up some youtube tech videos, where I share my thoughts about
+              mobile technologies. Click to download my{" "}
               <Link
                 to="https://docs.google.com/document/d/18QEpZy9fB74B-F3R7H0llSVpHIjZPwUl0dgy8NE2SeE/edit?usp=drivesdk"
                 target="_blank"
+                className="resume"
               >
                 resume
               </Link>{" "}
