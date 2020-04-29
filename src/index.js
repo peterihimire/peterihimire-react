@@ -4,17 +4,12 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
-import NotFound from "./pages/NotFound";
-import { Switch, Route } from "react-router-dom";
 import { ProjectProvider } from "./context";
 
 ReactDOM.render(
   <ProjectProvider>
     <Router>
-      <Switch>
-        <Route exact path="/" component={App} />
-        <Route component={NotFound} />
-      </Switch>
+      <App />
     </Router>
   </ProjectProvider>,
   document.getElementById("root")

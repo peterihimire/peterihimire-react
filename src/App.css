@@ -1285,7 +1285,7 @@ textarea {
   bottom: 5rem;
   visibility: hidden;
   transition: all linear 0.5s;
-  padding: 0.2rem 1rem 0 1rem;
+  padding: 0.8rem 1.2rem 0.6rem 1.2rem;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 50px 0 0 50px;
   transform: translateX(100%);
@@ -1305,7 +1305,7 @@ textarea {
     bottom: 10rem;
     visibility: hidden;
     transition: all linear 0.5s;
-    padding: 0.5rem 2rem 0 2rem;
+    padding: 1.2rem 2rem 0.8rem 2rem;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 50px 0 0 50px;
     transform: translateX(100%);
