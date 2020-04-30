@@ -50,35 +50,47 @@ function footer() {
               <ul className="follow-links-footer">
                 <li className="follow-container-footer">
                   <div className="follow-icon-container-footer1">
-                    <Link to="/">
+                    <Link
+                      to="https://facebook.com/ihimirepeter"
+                      target="_blank"
+                    >
                       <FaFacebookF className="follow-icon-footer FaFacebookF" />
                     </Link>
                   </div>
                 </li>
                 <li className="follow-container-footer">
                   <div className="follow-icon-container-footer2">
-                    <Link to="/">
+                    <Link
+                      to="https://twitter.com/ptechanalysis"
+                      target="_blank"
+                    >
                       <FaTwitter className="follow-icon-footer FaTwitter" />
                     </Link>
                   </div>
                 </li>
                 <li className="follow-container-footer">
                   <div className="follow-icon-container-footer3">
-                    <Link to="/">
+                    <Link
+                      to="https://instagram.com/peterihimire"
+                      target="_blank"
+                    >
                       <FaInstagram className="follow-icon-footer FaInstagram" />
                     </Link>
                   </div>
                 </li>
                 <li className="follow-container-footer">
                   <div className="follow-icon-container-footer4">
-                    <Link to="/">
+                    <Link
+                      to="https://www.linkedin.com/in/peter-ihimire-20b007162"
+                      target="_blank"
+                    >
                       <FaLinkedinIn className="follow-icon-footer FaLinkedinIn" />
                     </Link>
                   </div>
                 </li>
                 <li className="follow-container-footer">
                   <div className="follow-icon-container-footer5">
-                    <Link to="/">
+                    <Link to="https://github.com/peterihimire" target="_blank">
                       <FaGithub className="follow-icon-footer FaGithub" />
                     </Link>
                   </div>
@@ -91,7 +103,7 @@ function footer() {
       <div className="footer-two">
         <div className="contact-center">
           <div className="last-footer">
-            <p>Copyright &copy; 2020 Peter Ihimire. all rights reserved. </p>
+            <p>copyright &copy; 2020 peter ihimire. all rights reserved. </p>
           </div>
         </div>
       </div>

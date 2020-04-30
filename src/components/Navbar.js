@@ -6,15 +6,11 @@ import {
   FaCog,
   FaEnvelope,
   FaBlog,
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedinIn,
-  FaGithub,
   FaAlignRight
 } from "react-icons/fa";
 // import { Link } from "react-router-dom";
 import { Link } from "react-scroll";
+import FollowLink from "../components/FollowLink";
 import logo from "../images/peterihimire-logo.svg";
 import { useContext } from "react";
 import { ProjectContext } from "../context";
@@ -120,44 +116,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-
-          <ul className="follow-links">
-            <li className="follow-container">
-              <div className="follow-icon-container1 ">
-                <Link to="/">
-                  <FaFacebookF className="follow-icon FaFacebookF" />
-                </Link>
-              </div>
-            </li>
-            <li className="follow-container">
-              <div className="follow-icon-container2">
-                <Link to="/">
-                  <FaTwitter className="follow-icon FaTwitter" />
-                </Link>
-              </div>
-            </li>
-            <li className="follow-container">
-              <div className="follow-icon-container3">
-                <Link to="/">
-                  <FaInstagram className="follow-icon FaInstagram" />
-                </Link>
-              </div>
-            </li>
-            <li className="follow-container">
-              <div className="follow-icon-container4">
-                <Link to="/">
-                  <FaLinkedinIn className="follow-icon FaLinkedinIn" />
-                </Link>
-              </div>
-            </li>
-            <li className="follow-container">
-              <div className="follow-icon-container5">
-                <Link to="/">
-                  <FaGithub className="follow-icon FaGithub" />
-                </Link>
-              </div>
-            </li>
-          </ul>
+          <FollowLink />
         </div>
       </nav>
     </>
