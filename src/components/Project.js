@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FaChrome, FaGithub } from "react-icons/fa";
 
 const Project = ({ project }) => {
-  const { image, title, detail, technologies } = project;
+  const { image, title, detail, technologies, online, github } = project;
   console.log(project);
 
   return (
@@ -21,12 +20,12 @@ const Project = ({ project }) => {
           </ul>
         </div>
         <div className="project-btns">
-          <Link to="" className="chrome-btn">
+          <a href={online} className="chrome-btn">
             <FaChrome /> project
-          </Link>
-          <Link to="" className="github-btn">
+          </a>
+          <a href={github} className="github-btn">
             <FaGithub /> github
-          </Link>
+          </a>
         </div>
       </div>
     </article>

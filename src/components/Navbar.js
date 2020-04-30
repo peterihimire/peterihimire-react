@@ -44,6 +44,7 @@ const Navbar = () => {
               // onClick={this.toggleHandler}
               onClick={toggleHandler}
             >
+              <span className="menu">Menu</span>
               <FaAlignRight className="nav-icon" />
             </button>
           </div>

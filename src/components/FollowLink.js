@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaTwitter,
@@ -14,40 +13,57 @@ const FollowLink = () => {
       <ul className="follow-links">
         <li className="follow-container">
           <div className="follow-icon-container1 ">
-            <Link to="https://facebook.com/ihimirepeter" target="_blank">
+            <a
+              href="https://facebook.com/ihimirepeter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebookF className="follow-icon FaFacebookF" />
-            </Link>
+            </a>
           </div>
         </li>
         <li className="follow-container">
           <div className="follow-icon-container2">
-            <Link to="https://twitter.com/ptechanalysis" target="_blank">
+            <a
+              href="https://twitter.com/ptechanalysis"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTwitter className="follow-icon FaTwitter" />
-            </Link>
+            </a>
           </div>
         </li>
         <li className="follow-container">
           <div className="follow-icon-container3">
-            <Link to="https://instagram.com/peterihimire" target="_blank">
+            <a
+              href="https://instagram.com/peterihimire"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram className="follow-icon FaInstagram" />
-            </Link>
+            </a>
           </div>
         </li>
         <li className="follow-container">
           <div className="follow-icon-container4">
-            <Link
-              to="https://www.linkedin.com/in/peter-ihimire-20b007162"
+            <a
+              href="https://www.linkedin.com/in/peter-ihimire-20b007162"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <FaLinkedinIn className="follow-icon FaLinkedinIn" />
-            </Link>
+            </a>
           </div>
         </li>
         <li className="follow-container">
           <div className="follow-icon-container5">
-            <Link to="https://github.com/peterihimire" target="_blank">
+            <a
+              href="https://github.com/peterihimire"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub className="follow-icon FaGithub" />
-            </Link>
+            </a>
           </div>
         </li>
       </ul>

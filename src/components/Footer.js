@@ -50,49 +50,57 @@ function footer() {
               <ul className="follow-links-footer">
                 <li className="follow-container-footer">
                   <div className="follow-icon-container-footer1">
-                    <Link
-                      to="https://facebook.com/ihimirepeter"
+                    <a
+                      href="https://facebook.com/ihimirepeter"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FaFacebookF className="follow-icon-footer FaFacebookF" />
-                    </Link>
+                    </a>
                   </div>
                 </li>
                 <li className="follow-container-footer">
                   <div className="follow-icon-container-footer2">
-                    <Link
-                      to="https://twitter.com/ptechanalysis"
+                    <a
+                      href="https://twitter.com/ptechanalysis"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FaTwitter className="follow-icon-footer FaTwitter" />
-                    </Link>
+                    </a>
                   </div>
                 </li>
                 <li className="follow-container-footer">
                   <div className="follow-icon-container-footer3">
-                    <Link
-                      to="https://instagram.com/peterihimire"
+                    <a
+                      href="https://instagram.com/peterihimire"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FaInstagram className="follow-icon-footer FaInstagram" />
-                    </Link>
+                    </a>
                   </div>
                 </li>
                 <li className="follow-container-footer">
                   <div className="follow-icon-container-footer4">
-                    <Link
-                      to="https://www.linkedin.com/in/peter-ihimire-20b007162"
+                    <a
+                      href="https://www.linkedin.com/in/peter-ihimire-20b007162"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FaLinkedinIn className="follow-icon-footer FaLinkedinIn" />
-                    </Link>
+                    </a>
                   </div>
                 </li>
                 <li className="follow-container-footer">
                   <div className="follow-icon-container-footer5">
-                    <Link to="https://github.com/peterihimire" target="_blank">
+                    <a
+                      href="https://github.com/peterihimire"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FaGithub className="follow-icon-footer FaGithub" />
-                    </Link>
+                    </a>
                   </div>
                 </li>
               </ul>

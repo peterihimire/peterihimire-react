@@ -1,7 +1,6 @@
 import React from "react";
 import Title from "../components/Title";
 import portrait from "../images/peter.jpg";
-import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import { useContext } from "react";
 import { ProjectContext } from "../context";
@@ -24,13 +23,11 @@ const About = () => {
           <div className="biography-text">
             <p>
               Based in Nigeria, I am a seasoned front-end web developer,
-              passionate about building excellent software that make a
-              difference. I have a Bachelor of Engineering in Electrical
-              Electronics, but have real passion for programming and web
-              development, where I specialize in creating unique, market-centric
-              websites that put my clients above their competitors, ranging from
-              individuals and small businesses all the way to large enterprice
-              corporations.
+              passionate about building excellent softwares that make a
+              difference. I specialize in creating unique, market-centric
+              websites and applications that put my clients above their
+              competitors, ranging from individuals and small businesses all the
+              way to large enterprice corporations.
             </p>
 
             <p>
@@ -45,14 +42,15 @@ const About = () => {
             <p>
               When am not programming, you'll find me in my home studio cooking
               up some youtube tech videos, where I share my thoughts about
-              mobile technologies. Click to download my{" "}
-              <Link
-                to="https://docs.google.com/document/d/18QEpZy9fB74B-F3R7H0llSVpHIjZPwUl0dgy8NE2SeE/edit?usp=drivesdk"
+              mobile technologies. Click to download my
+              <a
+                href="https://docs.google.com/document/d/18QEpZy9fB74B-F3R7H0llSVpHIjZPwUl0dgy8NE2SeE/edit?usp=drivesdk"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="resume"
               >
                 resume
-              </Link>{" "}
+              </a>{" "}
               , for more information.
             </p>
           </div>
