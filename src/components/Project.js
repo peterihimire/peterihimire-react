@@ -20,10 +20,20 @@ const Project = ({ project }) => {
           </ul>
         </div>
         <div className="project-btns">
-          <a href={online} className="chrome-btn">
+          <a
+            href={online}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="chrome-btn"
+          >
             <FaChrome /> project
           </a>
-          <a href={github} className="github-btn">
+          <a
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="github-btn"
+          >
             <FaGithub /> github
           </a>
         </div>

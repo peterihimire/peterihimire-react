@@ -282,7 +282,8 @@ body {
       rgba(12, 12, 12, 0.699),
       rgba(54, 130, 170, 0.699)
     ),
-    url("./images/background.jpg") center/cover no-repeat;
+    url("https://res.cloudinary.com/dymhdpka1/image/upload/v1588213497/PETER-HERO_wsrdac.jpg")
+      center/cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -297,7 +298,8 @@ body {
         rgba(12, 12, 12, 0.699),
         rgba(54, 130, 170, 0.699)
       ),
-      url("./images/background.jpg") center/cover no-repeat;
+      url("https://res.cloudinary.com/dymhdpka1/image/upload/v1588213497/PETER-HERO_wsrdac.jpg")
+        center/cover no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;

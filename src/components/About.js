@@ -18,7 +18,11 @@ const About = () => {
         />
         <div className="biography">
           <div className="biography-image">
-            <img src={portrait} alt="Peter Ihimire" className="image-round" />
+            <img
+              src="https://res.cloudinary.com/dymhdpka1/image/upload/v1588213741/20190320_161544_i3npew.jpg"
+              alt="Peter Ihimire picture"
+              className="image-round"
+            />
           </div>
           <div className="biography-text">
             <p>
@@ -44,7 +48,7 @@ const About = () => {
               up some youtube tech videos, where I share my thoughts about
               mobile technologies. Click to download my
               <a
-                href="https://docs.google.com/document/d/18QEpZy9fB74B-F3R7H0llSVpHIjZPwUl0dgy8NE2SeE/edit?usp=drivesdk"
+                href="https://drive.google.com/file/d/192ritcuRCLA7GOuRuGPPLdETuGzGmO5b/view?usp=drivesdk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="resume"
