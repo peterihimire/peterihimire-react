@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 
-const Error = () => {
+const NotFound = () => {
   return (
     <Hero>
       <Banner name="404" title="page not found">
@@ -15,4 +15,4 @@ const Error = () => {
   );
 };
 
-export default Error;
+export default NotFound;

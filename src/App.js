@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Error from "./pages/Error";
+import NotFound from "./pages/NotFound";
 import { Route, Switch } from "react-router-dom";
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route component={Error} />
+          <Route component={NotFound} />
         </Switch>
       </Fragment>
     );
