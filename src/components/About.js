@@ -1,6 +1,5 @@
 import React from "react";
 import Title from "../components/Title";
-import portrait from "../images/peter.jpg";
 import Fade from "react-reveal/Fade";
 import { useContext } from "react";
 import { ProjectContext } from "../context";
@@ -20,7 +19,7 @@ const About = () => {
           <div className="biography-image">
             <img
               src="https://res.cloudinary.com/dymhdpka1/image/upload/v1588213741/20190320_161544_i3npew.jpg"
-              alt="Peter Ihimire picture"
+              alt="Peter Ihimire"
               className="image-round"
             />
           </div>

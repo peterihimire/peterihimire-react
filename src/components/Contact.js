@@ -20,7 +20,8 @@ const contact = () => {
 
         <Bounce left delay={200} duration={3500}>
           <div className="contact-card">
-            <form className="contact-form">
+            <form name="contact" method="post" className="contact-form">
+              <input type="hidden" name="form-name" value="contact" />
               <div className="contact-header">
                 <div className="contact-header-content">
                   <h2>PETER IHIMIRE</h2>

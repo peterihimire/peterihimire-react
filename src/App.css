@@ -483,8 +483,7 @@ body {
 .services span {
   display: inline-block;
   /* color: red; */
-  font-size: 8rem;
-  margin-bottom: 2rem;
+  font-size: 7.5rem;
 }
 .gem-color {
   color: rgb(4, 189, 14);

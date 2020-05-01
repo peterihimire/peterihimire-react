@@ -25,7 +25,7 @@ class ProjectProvider extends Component {
         iconColor: "gem-color",
         title: "intuitive UX/UI",
         info:
-          "I have strong preference for Intuitive User Experience and User Interfaces."
+          "I have strong preference for easy to use user interfaces & great user experience."
       },
       {
         icon: <FaRocket />,
@@ -39,7 +39,7 @@ class ProjectProvider extends Component {
         iconColor: "desktop-color",
         title: "responsive layout",
         info:
-          "My layout will work on any device, laptops, tablets and smart-phones."
+          "My layout will work on any device, desktops, laptops, tablets and smartphones."
       },
       {
         icon: <FaHeartbeat />,
@@ -63,7 +63,7 @@ class ProjectProvider extends Component {
       {
         title: "mentor",
         details:
-          " Starting the journey of a web development and software engineering has never been easy, I know what it feels like, thats why I genuinely care about new programmers and fellow web developers, mentoring and helping them improve on their soft and hard skills as a software engineers."
+          " Starting the journey of a web development and software engineering has never been easy, I know what it feels like, thats why I genuinely care about new programmers and fellow web developers, mentoring and helping them improve on their soft and hard skills as software engineers."
       }
     ],
     skills: [
