@@ -42,3 +42,4 @@ const Project = ({ project }) => {
   );
 };
 export default Project;
+

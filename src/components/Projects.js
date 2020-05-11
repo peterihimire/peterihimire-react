@@ -24,3 +24,4 @@ const Projects = ({ context }) => {
 };
 
 export default withProjectConsumer(Projects);
+

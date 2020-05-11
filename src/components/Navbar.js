@@ -100,9 +100,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/">
+              <a
+                href="https://benkih-blog-react.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaBlog className="link-icon blog-color" /> blog
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
               <Link

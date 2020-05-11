@@ -10,9 +10,12 @@ import {
   FaSass,
   FaLinux,
   FaGit,
-  FaGulp
+  FaGulp,
+  FaRocket,
+  FaHeartbeat,
+  FaGem,
+  FaDesktop
 } from "react-icons/fa";
-import { FaRocket, FaHeartbeat, FaGem, FaDesktop } from "react-icons/fa";
 import Client from "./Contentful";
 
 const ProjectContext = React.createContext();
