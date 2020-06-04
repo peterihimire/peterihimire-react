@@ -704,7 +704,8 @@ body {
 .project-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.685);
   transition: var(--mainTransition);
-  margin: -0.3rem -0.3rem 0 -0.3rem;
+  /* margin: -0.3rem -0.3rem 0 -0.3rem; */
+  transform: scale(1.05);
 }
 .project-image {
   width: 100%;
