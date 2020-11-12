@@ -568,7 +568,8 @@ body {
   background: var(--mainWhite);
 }
 .image-round {
-  width: 18rem;
+  width: 50%;
+  /* width: 18rem; */
   border-radius: 50%;
   box-shadow: 0 0.4rem 0.8rem 0 rgba(0.1, 0.1, 0.1, 0.5);
 }
