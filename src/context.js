@@ -228,7 +228,6 @@ class ProjectProvider extends Component {
     if (type !== "all") {
       tempProjects = tempProjects.filter(project => project.type === type);
     }
-
     this.setState({ sortedProjects: tempProjects });
   };
 
